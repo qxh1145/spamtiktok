@@ -1,0 +1,58 @@
+{
+  "name": "name-quanvibe-new-read-files-i",
+  "task": "Worker 1: --name quanvibe-new Read  files in current folder; Worker 2: --name quanvibe-new Read  files in current folder; Worker 3: --name quanvibe-new Read  files in current folder",
+  "agent_type": "gemini",
+  "worker_launch_mode": "interactive",
+  "policy": {
+    "display_mode": "split_pane",
+    "worker_launch_mode": "interactive",
+    "dispatch_mode": "hook_preferred_with_fallback",
+    "dispatch_ack_timeout_ms": 15000
+  },
+  "governance": {
+    "delegation_only": false,
+    "plan_approval_required": false,
+    "nested_teams_allowed": false,
+    "one_team_per_leader_session": true,
+    "cleanup_requires_all_workers_inactive": true
+  },
+  "worker_count": 3,
+  "max_workers": 20,
+  "workers": [
+    {
+      "name": "worker-1",
+      "index": 1,
+      "role": "architect",
+      "assigned_tasks": [],
+      "working_dir": "/Users/quan/HocTap/Vibecode/spamtag",
+      "pane_id": "%1"
+    },
+    {
+      "name": "worker-2",
+      "index": 2,
+      "role": "executor",
+      "assigned_tasks": [],
+      "working_dir": "/Users/quan/HocTap/Vibecode/spamtag",
+      "pane_id": "%2"
+    },
+    {
+      "name": "worker-3",
+      "index": 3,
+      "role": "test-engineer",
+      "assigned_tasks": [],
+      "working_dir": "/Users/quan/HocTap/Vibecode/spamtag",
+      "pane_id": "%3"
+    }
+  ],
+  "created_at": "2026-04-06T15:04:15.993Z",
+  "tmux_session": "omc-team-name-quanvibe-new-read-files-i-mnnbml9v:0",
+  "tmux_window_owned": true,
+  "next_task_id": 4,
+  "leader_cwd": "/Users/quan/HocTap/Vibecode/spamtag",
+  "team_state_root": "/Users/quan/HocTap/Vibecode/spamtag/.omc/state/team/name-quanvibe-new-read-files-i",
+  "leader_pane_id": "%0",
+  "hud_pane_id": null,
+  "resize_hook_name": null,
+  "resize_hook_target": null,
+  "workspace_mode": "single"
+}

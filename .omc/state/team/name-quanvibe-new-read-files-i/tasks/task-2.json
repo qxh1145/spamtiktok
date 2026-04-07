@@ -1,0 +1,11 @@
+{
+  "id": "2",
+  "subject": "Worker 2: --name quanvibe-new Read  files in current folder",
+  "description": "--name quanvibe-new Read  files in current folder",
+  "status": "completed",
+  "owner": "worker-2",
+  "result": null,
+  "created_at": "2026-04-06T15:04:15.567Z",
+  "version": 3,
+  "completed_at": "2026-04-06T15:04:54.380Z"
+}

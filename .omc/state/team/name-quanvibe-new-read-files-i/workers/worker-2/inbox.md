@@ -1,0 +1,21 @@
+## REQUIRED: Task Lifecycle Commands
+You MUST run these commands. Do NOT skip any step.
+
+1. Claim your task:
+   omc team api claim-task --input '{"team_name":"name-quanvibe-new-read-files-i","task_id":"2","worker":"worker-2"}' --json
+   Save the claim_token from the response.
+2. Do the work described below.
+3. On completion (use claim_token from step 1):
+   omc team api transition-task-status --input '{"team_name":"name-quanvibe-new-read-files-i","task_id":"2","from":"in_progress","to":"completed","claim_token":"<claim_token>"}' --json
+4. On failure (use claim_token from step 1):
+   omc team api transition-task-status --input '{"team_name":"name-quanvibe-new-read-files-i","task_id":"2","from":"in_progress","to":"failed","claim_token":"<claim_token>"}' --json
+5. ACK/progress replies are not a stop signal. Keep executing your assigned or next feasible work until the task is actually complete or failed, then transition and exit.
+
+## Task Assignment
+Task ID: 2
+Worker: worker-2
+Subject: Worker 2: --name quanvibe-new Read  files in current folder
+
+--name quanvibe-new Read  files in current folder
+
+REMINDER: You MUST run transition-task-status before exiting. Do NOT write done.json or edit task files directly.
